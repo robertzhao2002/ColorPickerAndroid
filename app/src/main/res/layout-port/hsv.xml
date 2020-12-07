@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/color_square"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/seekBarH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBarH"
+        android:layout_width="165dp"
+        android:layout_height="35dp"
+        android:inputType="number"
+        android:max="360"
+        android:min="0"
+        android:thumbTint="@color/black"
+        android:progressTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color_square" />
+
+    <TextView
+        android:id="@+id/textViewH"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:text="@string/H"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/textViewS"
+        app:layout_constraintEnd_toStartOf="@id/seekBarH"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/color_square" />
+
+    <SeekBar
+        android:id="@+id/seekBarS"
+        android:layout_width="165dp"
+        android:layout_height="35dp"
+        android:inputType="number"
+        android:max="100"
+        android:min="0"
+        android:thumbTint="@color/black"
+        android:progressTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/seekBarV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekBarH" />
+
+    <TextView
+        android:id="@+id/textViewS"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:text="@string/S"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/textViewV"
+        app:layout_constraintEnd_toStartOf="@id/seekBarS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewH" />
+
+    <SeekBar
+        android:id="@+id/seekBarV"
+        android:layout_width="165dp"
+        android:layout_height="35dp"
+        android:inputType="number"
+        android:max="100"
+        android:min="0"
+        android:thumbTint="@color/black"
+        android:progressTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekBarS" />
+
+    <TextView
+        android:id="@+id/textViewV"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:text="@string/V"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/seekBarV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewS" />
+
+    <Button
+        android:id="@+id/buttonHSV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/HSV"
+        app:layout_constraintBottom_toTopOf="@id/seekBarH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/color_square" />
+
+    <Button
+        android:id="@+id/buttonloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekBarV" />
+
+    <Button
+        android:id="@+id/Bshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share"
+        app:layout_constraintBottom_toTopOf="@id/color_square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

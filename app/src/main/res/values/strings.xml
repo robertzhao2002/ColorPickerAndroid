@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Color Picker</string>
+    <string name="R">Red: 0</string>
+    <string name="G">Green: 0</string>
+    <string name="B">Blue: 0</string>
+    <string name="portrait">Portrait</string>
+    <string name="R2">Red</string>
+    <string name="G2">Green</string>
+    <string name="B2">Blue</string>
+    <string name="initialblack">#000000</string>
+    <string name="locationString">#%1$s</string>
+    <string name="H">Hue: 0°</string>
+    <string name="S">Saturation: 0%</string>
+    <string name="V">Value: 0%</string>
+    <string name="H2">Hue</string>
+    <string name="S2">Saturation</string>
+    <string name="V2">Value</string>
+    <string name="HSV">To RGB Mode</string>
+    <string name="RGB">To HSV Mode</string>
+    <string name="locbutton">Get Location Color</string>
+    <string name="snack">RETRY</string>
+    <string name="share">SHARE HEX</string>
+</resources>
